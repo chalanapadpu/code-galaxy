@@ -1,4 +1,4 @@
-const user = new URLSearchParams(location.search).get("user") || "YOUR_USERNAME";
+const user = new URLSearchParams(location.search).get("user") || "chalanapadpu";
 
 async function loadRepos(user) {
   const res = await fetch(`https://api.github.com/users/${user}/repos?per_page=100`);
